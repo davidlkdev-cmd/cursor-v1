@@ -110,7 +110,7 @@ io.on("connection", async (socket) => {
       startTurnTimer(io, DEMO_SESSION_ID);
       io.to(DEMO_SESSION_ID).emit("turn:start", {
         turn: session.turn,
-        timeoutMs: 15000,
+        timeoutMs: 10000,
       });
     }
   });

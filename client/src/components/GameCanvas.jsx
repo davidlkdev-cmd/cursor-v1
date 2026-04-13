@@ -56,30 +56,30 @@ export default function GameCanvas({ cursor, trail = [], goal, players = [], las
         });
       }
 
-      // Goal — crosshair only, no radius circle
-      if (goal) {
-        const gx = goal.x;
-        const gy = goal.y;
-        const arm = 14;
+      // // Goal — crosshair only, no radius circle
+      // if (goal) {
+      //   const gx = goal.x;
+      //   const gy = goal.y;
+      //   const arm = 14;
 
-        ctx.strokeStyle = "#ffe600";
-        ctx.lineWidth = 2.5;
-        ctx.beginPath();
-        ctx.moveTo(gx - arm, gy); ctx.lineTo(gx + arm, gy);
-        ctx.moveTo(gx, gy - arm); ctx.lineTo(gx, gy + arm);
-        ctx.stroke();
+      //   ctx.strokeStyle = "#ffe600";
+      //   ctx.lineWidth = 2.5;
+      //   ctx.beginPath();
+      //   ctx.moveTo(gx - arm, gy); ctx.lineTo(gx + arm, gy);
+      //   ctx.moveTo(gx, gy - arm); ctx.lineTo(gx, gy + arm);
+      //   ctx.stroke();
 
-        ctx.beginPath();
-        ctx.arc(gx, gy, 5, 0, Math.PI * 2);
-        ctx.fillStyle = "#ffe600";
-        ctx.fill();
+      //   ctx.beginPath();
+      //   ctx.arc(gx, gy, 5, 0, Math.PI * 2);
+      //   ctx.fillStyle = "#ffe600";
+      //   ctx.fill();
 
-        ctx.fillStyle = "#ffe600";
-        ctx.font = "bold 13px 'Space Mono', monospace";
-        ctx.textAlign = "center";
-        ctx.textBaseline = "top";
-        ctx.fillText("GOAL", gx, gy + 18);
-      }
+      //   ctx.fillStyle = "#ffe600";
+      //   ctx.font = "bold 13px 'Space Mono', monospace";
+      //   ctx.textAlign = "center";
+      //   ctx.textBaseline = "top";
+      //   ctx.fillText("GOAL", gx, gy + 18);
+      // }
 
       // Cursor
       if (cursor) {

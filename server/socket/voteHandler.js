@@ -2,7 +2,7 @@ import Session from '../models/Session.js';
 import { weightedAverageAngle, moveCursor, checkGoal } from '../game/engine.js';
 import { applyScores } from '../game/scoring.js';
 
-const VOTE_TIMEOUT_MS = 5000;
+const VOTE_TIMEOUT_MS = 10000;
 const turnTimers = new Map();
 
 function startTurnTimer(io, sessionId) {
