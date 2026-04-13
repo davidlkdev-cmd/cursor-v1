@@ -3,18 +3,16 @@
   "version": "1.0.0",
   "description": "",
   "homepage": "https://github.com/davidlkdev-cmd/cursor-v1#readme",
-  "bugs": {
-    "url": "https://github.com/davidlkdev-cmd/cursor-v1/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/davidlkdev-cmd/cursor-v1.git"
-  },
+  "bugs": { "url": "https://github.com/davidlkdev-cmd/cursor-v1/issues" },
+  "repository": { "type": "git", "url": "git+https://github.com/davidlkdev-cmd/cursor-v1.git" },
   "license": "ISC",
   "author": "",
-  "type": "commonjs",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "install:all": "npm install && npm install --prefix server && npm install --prefix client",
+    "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "start": "npm run start --prefix server"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
   }
 }
