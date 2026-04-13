@@ -3,7 +3,7 @@ import socket from "../socket/socket";
 import GameCanvas from "../components/GameCanvas";
 import VotePanel from "../components/VotePanel";
 import ChatBox from "../components/ChatBox";
-import Leaderboard from "../components/Leaderboard";
+import LeaderBoard from "../components/LeaderBoard";
 
 const DEFAULT_TIMEOUT = 15;
 
